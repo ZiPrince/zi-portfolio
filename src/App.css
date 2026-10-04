@@ -1,0 +1,189 @@
+.container {
+	display: flex;
+  	justify-content: center; /* Centers horizontally (on the main axis) */
+  	align-items: center;   
+}
+
+.innerContainer { 
+	background-color: #ffe6f0;
+  	min-height: 100vh;
+	width: 88vw;
+}
+
+.nameJobPicContainer{
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+	min-height: calc(100vh - 95px);
+	gap: 2vw;
+
+}
+
+.nameAndTitle { 
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	font-size: 50px;
+	white-space: normal;
+}
+
+.nameAnimation {
+	animation: slideInLeft 0.9s ease-out forwards;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.heading{ 
+	font-size: 20px; 
+	margin: 20px;
+}
+
+.headingBig{ 
+	font-size: 30px; 
+	margin: 10px 0px 15px 0px;
+}
+
+/*duckie*/
+.duckMain {
+  width: 60px;
+  height: 30px;
+}
+
+
+/*RIGHT SIDE*/ 
+
+.flex { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profilePic {
+	animation: bounceInRight 1s ease-out;
+}
+
+
+
+@keyframes bounceInRight {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.profilePicSize { 
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 47%;
+  margin: 40px;
+  display:flex
+}
+
+/*PROJECTS  */
+
+#projects {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.charlie { 
+  width: 45vw;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.videoBackground { 
+	background-color: #ebd4dd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* about me*/
+
+#about {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kirby {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	align-self: center;
+	opacity: 0;
+}
+
+.showKirby {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .innerContainer {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .nameJobPicContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .nameAndTitle {
+    font-size: 38px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 18px;
+    margin: 10px 0 20px;
+  }
+
+  .profilePicSize {
+    width: 220px;
+    height: 220px;
+    margin: 20px 0;
+  }
+}
