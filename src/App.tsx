@@ -5,6 +5,7 @@ import Header from './Header'
 import CharlieVid from './assets/cxmPreview-DcNfuDgd.mp4'
 import LukeVid from './assets/rootedstrength-Dqw_8IGy.mp4'
 import kirby from './assets/kirby.png'
+import Contact from './Contact'
 
 function App() {
 
@@ -84,7 +85,7 @@ function App() {
 					</section>
 
 					<section id="about">
-						<div className='heading'>About Me</div>
+						<div className='headingBig'>About Me</div>
 						<div className='flex' style={{margin: '0px 30px 20px 30px'}}>
 							<img
 								src={kirby}
@@ -102,7 +103,8 @@ function App() {
 					</section>
 
 					<section id="contact">
-						<div className='heading'>Contact Me</div>
+						<div className='headingBig'>Contact Me</div>
+						<Contact />
 					</section>
 				</div>
 
